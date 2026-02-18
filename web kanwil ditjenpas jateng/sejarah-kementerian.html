@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kemenimipas RI - Ditjenpas Jateng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-slate-900">
+    <!-- Topbar -->
+    <div class="bg-slate-900 text-white">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="flex flex-col gap-2 py-2 md:flex-row md:items-center md:justify-between">
+          <!-- Social -->
+          <div class="flex items-center gap-3 text-sm">
+            <!-- Facebook -->
+            <a href="https://facebook.com/Kanwil Pemasyarakatan Jateng"
+              target="_blank" rel="noopener noreferrer"
+              class="opacity-90 hover:opacity-100"
+              aria-label="Facebook">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4H15c-1.2 0-1.6.7-1.6 1.5V12H18l-.7 2.9h-3v7A10 10 0 0 0 22 12z"/>
+              </svg>
+            </a>
+
+            <!-- X -->
+            <a href="https://x.com/pemasyarakatanjateng"
+              target="_blank" rel="noopener noreferrer"
+              class="opacity-90 hover:opacity-100"
+              aria-label="X">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.5l-5.1-6.6L6 22H2.8l7.3-8.4L1 2h6.7l4.6 6.1L18.9 2zm-1.1 18h1.7L7.6 3.9H5.8L17.8 20z"/>
+              </svg>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@pemasyarakatanjateng"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group transition"
+              aria-label="YouTube">
+              <svg class="h-6 w-6 text-white transition group-hover:text-red-600"
+                  viewBox="0 0 24 24"
+                  fill="currentColor">
+                <path d="M23.498 6.186a2.99 2.99 0 0 0-2.105-2.115C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.393.571A2.99 2.99 0 0 0 .502 6.186 31.36 31.36 0 0 0 0 12a31.36 31.36 0 0 0 .502 5.814 2.99 2.99 0 0 0 2.105 2.115C4.495 20.5 12 20.5 12 20.5s7.505 0 9.393-.571a2.99 2.99 0 0 0 2.105-2.115A31.36 31.36 0 0 0 24 12a31.36 31.36 0 0 0-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z"/>
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/pemasyarakatanjateng"
+              target="_blank" rel="noopener noreferrer"
+              class="opacity-90 hover:opacity-100"
+              aria-label="Instagram">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 2A1.8 1.8 0 1 0 13.8 12 1.8 1.8 0 0 0 12 10.2zM17.6 6.7a.9.9 0 1 1-.9.9.9.9 0 0 1 .9-.9z"/>
+              </svg>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@ditjenpasjateng"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="opacity-90 hover:opacity-100"
+              aria-label="TikTok">
+              
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-1.88V15.3a5.32 5.32 0 1 1-4.59-5.27v2.82a2.5 2.5 0 1 0 1.77 2.39V2h2.82a4.79 4.79 0 0 0 3.77 3.68v1.006z"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Contact & hours -->
+          <div class="flex flex-col gap-1 text-xs md:flex-row md:items-center md:gap-6">
+            <div class="flex items-center gap-2">
+              <span class="inline-flex items-center justify-center rounded bg-yellow-400 px-2 py-0.5 font-semibold text-slate-900">
+                ☎
+              </span>
+              <span>0823-2422-8900</span>
+              <span class="inline-flex items-center justify-center rounded bg-yellow-400 px-2 py-0.5 font-semibold text-slate-900">
+                📧
+              </span>
+              <span>kambina.pasjateng@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-2 opacity-90">
+              <span class="inline-flex items-center justify-center rounded bg-yellow-400 px-2 py-0.5 font-semibold text-slate-900">
+                🕘
+              </span>
+              <span>Senin–Jumat 07.30–16.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="border-b bg-white sticky top-0 z-50 w-full shadow-md">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="flex items-center justify-between gap-4 py-4">
+          <!-- Brand -->
+          <!-- Brand / Logo -->
+          <a href="index.html" class="flex items-center gap-4">
+    
+            <!-- Logo Kementerian -->
+            <div class="flex items-center gap-2">
+              <img 
+                src="https://kemenimipas.go.id/images/logo/Kementerian-Hukum-Dan-Ham-Kemenkumham-Logo-Vector.png" 
+                alt="Logo Kementerian"
+                class="h-12 w-auto object-contain"
+              />
+            </div>
+
+            <!-- Divider (garis pemisah) -->
+            <div class="hidden h-10 w-px bg-slate-300 md:block"></div>
+
+            <!-- Logo Direktorat Jenderal Pemasyarakatan -->
+            <div class="flex items-center gap-2">
+              <img 
+                src="LOGO PAS 2025 FIX.png" 
+                alt="Logo Ditjen Pemasyarakatan"
+                class="h-12 w-auto object-contain"
+              />
+            </div>
+
+            <!-- Text Nama Instansi -->
+            <div class="hidden leading-tight md:block">
+              <div class="text-sm font-bold uppercase text-slate-800">
+                Kantor Wilayah Ditjen Pemasyarakatan
+              </div>
+              <div class="text-xs uppercase text-slate-500">
+                Provinsi Jawa Tengah
+              </div>
+            </div>
+          </a>
+
+          <!-- Desktop nav -->
+          <nav class="hidden items-center gap-1 md:flex">
+            <!-- Dropdown helper (pure CSS via group hover) -->
+            <div class="relative group">
+              <button class="flex items-center gap-2 rounded px-3 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-100">
+                Profil
+                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4z" clip-rule="evenodd"/></svg>
+              </button>
+              <div class="invisible absolute left-0 top-full z-50 mt-2 w-56 rounded-xl border bg-white p-2 shadow-lg opacity-0 transition group-hover:visible group-hover:opacity-100">
+                <a href="sejarah-kementerian.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100">Sejarah Kementerian</a>
+                <a href="profil-pejabat.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100">Profil Pejabat</a>
+                <a href="struktur-organisasi.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100">Struktur Organisasi</a>
+                <a href="tugas-pokok-fungsi.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100">Tugas Pokok dan Fungsi</a>
+                <a href="strategi-organisasi.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100">Strategi Organisasi</a>
+                <a href="core-value-prima.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100">Core Value PRIMA</a>
+              </div>
+            </div>
+
+            <div class="relative group">
+              <button class="flex items-center gap-2 rounded px-3 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-100">
+                Layanan
+                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4z" clip-rule="evenodd"/></svg>
+              </button>
+              <div class="invisible absolute left-0 top-full z-50 mt-2 w-56 rounded-xl border bg-white p-2 shadow-lg opacity-0 transition group-hover:visible group-hover:opacity-100">
+                <a href="#layanan" class="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100">Layanan Informasi</a>
+                <a href="#pengaduan" class="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100">Pengaduan</a>
+                <a href="https://ppid.kemenimipas.go.id/" class="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100">PPID</a>
+              </div>
+            </div>
+
+            <a href="#informasi" class="rounded px-3 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-100">Pusat Informasi</a>
+            <a href="#produk" class="rounded px-3 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-100">Berita </a>
+
+            <div class="relative group">
+              <button class="flex items-center gap-2 rounded px-3 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-100">
+                Satuan Kerja
+                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4z" clip-rule="evenodd"/></svg>
+              </button>
+              <div class="invisible absolute right-0 top-full z-50 mt-2 w-72 rounded-xl border bg-white p-2 shadow-lg opacity-0 transition group-hover:visible group-hover:opacity-100">
+                <a href="#upt" class="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100">UPT Pemasyarakatan</a>
+                <a href="#lapas" class="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100">Lapas/Rutan</a>
+                <a href="#bapas" class="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100">Bapas</a>
+              </div>
+            </div>
+
+            <a href="https://wa.me/6282324228900?text=Halo%20Kanwil%20Ditjenpas%20Jawa%20Tengah,%20saya%20ingin%20bertanya%20terkait%20layanan%20informasi." class="ml-2 inline-flex items-center gap-2 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-bold text-slate-900 hover:bg-yellow-300">
+              ☎ Call Center
+            </a>
+          </nav>
+
+          <!-- Mobile button -->
+          <button id="mobileBtn" class="inline-flex items-center justify-center rounded-lg border px-3 py-2 text-sm font-semibold md:hidden">
+            Menu
+          </button>
+        </div>
+
+        <!-- Mobile nav panel -->
+        <div id="mobileNav" class="hidden pb-4 md:hidden">
+          <div class="grid gap-2 rounded-xl border bg-white p-3">
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold hover:bg-slate-100" href="#tentang">Profil</a>
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold hover:bg-slate-100" href="#layanan">Layanan</a>
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold hover:bg-slate-100" href="#informasi">Pusat Informasi</a>
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold hover:bg-slate-100" href="#produk">Berita</a>
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold hover:bg-slate-100" href="#upt">Satuan Kerja</a>
+            <a class="rounded-lg bg-yellow-400 px-3 py-2 text-sm font-bold text-slate-900 hover:bg-yellow-300" href="https://wa.me/6282324228900?text=Halo%20Kanwil%20Ditjenpas%20Jawa%20Tengah,%20saya%20ingin%20bertanya%20terkait%20layanan%20informasi.">☎ Call Center</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <!-- HERO PAGE HEADER -->
+  <section class="bg-slate-900">
+    <div class="mx-auto max-w-7xl px-4 py-10">
+      <h1 class="text-2xl font-extrabold text-white">Sejarah</h1>
+      <p class="mt-1 text-sm text-white/75">Sejarah Kementerian Imigrasi dan Pemasyarakatan</p>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <div class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-3 text-sm text-slate-600">
+      <span class="text-slate-500">You are here:</span>
+      <a href="index.html" class="text-yellow-600 hover:underline">Home</a>
+      <span class="mx-2 text-slate-400">/</span>
+      <span>Sejarah Kementerian</span>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="mx-auto max-w-7xl px-4 py-10">
+    <div class="grid gap-8 lg:grid-cols-12">
+
+      <!-- LEFT SIDEBAR -->
+      <aside class="lg:col-span-4">
+        <div class="rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
+          <div class="border-b px-6 py-5">
+            <h2 class="text-lg font-extrabold">Profil Organisasi</h2>
+          </div>
+
+          <nav class="divide-y">
+            <a href="sejarah-kementerian.html" class="block px-6 py-4 text-sm font-semibold text-slate-900 bg-slate-50">
+              Sejarah Kementerian
+            </a>
+            <a href="profil-pejabat.html" class="block px-6 py-4 text-sm text-slate-700 hover:bg-slate-50">
+              Profil Pejabat
+            </a>
+            <a href="struktur-organisasi.html" class="block px-6 py-4 text-sm text-slate-700 hover:bg-slate-50">
+              Struktur Organisasi
+            </a>
+            <a href="tupoksi.html" class="block px-6 py-4 text-sm text-slate-700 hover:bg-slate-50">
+              Tugas Pokok dan Fungsi
+            </a>
+            <a href="strategi-organisasi.html" class="block px-6 py-4 text-sm text-slate-700 hover:bg-slate-50">
+              Strategi Organisasi
+            </a>
+            <a href="core-value-prima.html" class="block px-6 py-4 text-sm text-slate-700 hover:bg-slate-50">
+              Core Value PRIMA
+            </a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- RIGHT CONTENT -->
+      <section class="lg:col-span-8">
+        <div class="rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
+          <div class="px-6 py-6 md:px-10 md:py-8">
+
+            <!-- Title -->
+            <h2 class="text-3xl font-extrabold">Sejarah Kementerian Imigrasi dan Pemasyarakatan</h2>
+
+            <!-- Source line -->
+            <p class="mt-6 text-sm text-slate-500">
+              (Sumber: Website Resmi Kementerian Imigrasi dan Pemasyarakatan Republik Indonesia (2025))
+            </p>
+
+            <!-- Image -->
+            <div class="mt-4 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+              <img
+                src="https://batam.imigrasi.go.id/assets/resources/content/big/gedung_kemenimipas.jpg"
+                alt="Foto Gedung"
+                class="h-[320px] w-full object-cover"
+              />
+            </div>
+
+            <!-- Article content -->
+            <article class="prose prose-slate max-w-none mt-6">
+              <div class="mt-6 text-justify leading-8 text-slate-700 text-[14px]">
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Terpilihnya Presiden Prabowo Subianto dan Wakil Presiden Gibran Rakabuming Raka, 24 April 2024
+                  </strong>
+                </p>
+                <div class="mt-4 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+                  <img
+                    src="https://kemenimipas.go.id/images/foto-capres-cawapres.jpeg"
+                    alt="Foto Terpilihnya Presiden Prabowo Subianto dan Wakil Presiden Gibran Rakabuming Raka"
+                    class="h-[480px] w-full object-cover"
+                  />
+                </div>
+                <p>
+                  Pasangan calon Presiden dan Wakil Presiden Republik Indonesia
+                  <strong class="font-bold text-slate-900">
+                  Jenderal TNI (Purn) Prabowo Subianto
+                  </strong>
+                  dan
+                  <strong class="font-bold text-slate-900">
+                  Gibran Rakabuming Raka
+                  </strong>
+                  secara resmi dinyatakan sebagai pemenang pemilihan umum sesuai dengan Keputusan Komisi Pemilihan Umum (KPU) Nomor 504 tahun 2024 tanggal 24 April 2024 tentang Penetapan Calon Presiden dan Wakil Presiden terpilih dalam pemilihan umum tahun 2024.
+                </p>
+
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Pembentukan Kabinet Merah Putih, 20 Oktober 2024
+                  </strong>
+                </p>
+                <div class="mt-4 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+                  <img
+                    src="https://kompaspedia.kompas.id/wp-content/uploads/2024/10/Kabinet-Merah-Putih-2-scaled.jpg"
+                    alt="Foto Kabinet Merah Putih"
+                    class="h-[480px] w-full object-cover"
+                  />
+                </div>
+                <p>
+                  Minggu, 20 Oktober, 2024,
+                  <strong class="font-bold text-slate-900">
+                  Jenderal TNI (Purn) Prabowo Subianto
+                  </strong>
+                  dan
+                  <strong class="font-bold text-slate-900">
+                  Gibran Rakabuming Raka
+                  </strong>
+                  dilantik dalam sidang paripurna Majelis Permusyawaratan Rakyat (MPR) di gedung nusantara DPR/MPR/DPD RI. Di awal pengumuman yang digelar di Istana Merdeka, Jakarta, Minggu malam, Presiden menyampaikan nama kabinetnya adalah
+                  <strong class="font-bold text-slate-900">
+                  Kabinet Merah Putih.
+                  </strong>
+                  Presiden Prabowo Subianto bersama Wakil Presiden Gibran Rakabuming Raka mengumumkan 48 nama Menteri dan 5 pejabat yang tidak berada di bawah koordinasi Kementerian Koordinator, serta 59 Wakil Menteri yang akan membantu pemerintahannya untuk periode 2024 - 2029.
+                </p>
+
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Pelantikan Menteri dan Wakil Menteri Kementerian Imigrasi dan Pemasyarakatan, 21 Oktober 2024
+                  </strong>
+                </p>
+                <div class="mt-4 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+                  <img
+                    src="https://kemenimipas.go.id/images/2026/foto_pelantikan_kabinet.jpeg"
+                    alt="Foto Pelantikan"
+                    class="h-[480px] w-full object-cover"
+                  />
+                </div>
+                <p>
+                  Senin, 21 Oktober 2024, Presiden melantik Kabinet Merah Putih di Istana Negara, Jakarta. Pelantikan para Menteri Negara berdasarkan Surat Keputusan Presiden Republik Indonesia Nomor 133/P Tahun 2024 tentang Pembentukan Kementerian Negara dan pengangkatan Menteri Negara Kabinet Merah Putih Periode Tahun 2024 - 2029 tanggal 20 Oktober 2024.
+                  <strong class="font-bold text-slate-900">
+                  Komisaris Jenderal Polisi Drs. Agus Andrianto, S.H., M.H.,
+                  </strong>
+                  dilantik sebagai Menteri Imigrasi dan Pemasyarakatan (Imipas) pada pagi hari, sedangkan
+                  <strong class="font-bold text-slate-900">
+                  Silmy Karim, S.E., M.E., M.B.A
+                  </strong>
+                  dilantik pada sore harinya sebagai Wakil Menteri Imigrasi dan Pemasyarakatan.
+                </p>
+
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Penataan Tugas dan Fungsi Negara, 21 Oktober 2024
+                  </strong>
+                </p>
+                <div class="mt-4 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+                  <img
+                    src="https://kemenimipas.go.id/images/2025/05/06/Screenshot_20250506_204313_Samsung_Notes.jpg"
+                    alt="Foto Penataan Tugas dan Fungsi Negara"
+                    class="h-[480px] w-full object-cover"
+                  />
+                </div>
+                <p>
+                  Untuk meningkatkan efektivitas penyelenggaraan pemerintahan, menyelaraskan tugas antar-kementerian, serta menghadapi tantangan pembangunan nasional dalam berbagai sektor, Pemerintah Republik Indonesia menetapkan Peraturan Presiden Nomor 139 Tahun 2024 tentang Penataan Tugas dan Fungsi Kementerian Negara dalam Kabinet Merah Putih Periode Tahun 
+                  2024-2029 tanggal 21 Oktober 2024. Kebijakan ini dilakukan menyusul adanya pergeseran tugas dan fungsi pada beberapa kementerian/lembaga negara, seiring dengan pembentukan Kabinet Merah Putih periode tersebut.
+                </p>
+
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Kemenkumham Pecah menjadi 3 Kementerian dan 1 Kementerian Koordinator, 21 Oktober 2024
+                  </strong>
+                </p>
+                <div class="mt-4 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+                  <img
+                    src="https://kemenimipas.go.id/images/2025/05/06/Screenshot_20250506_205707_Samsung_Notes.jpg"
+                    alt="Foto 3 Menteri dan 1 Menko"
+                    class="h-[480px] w-full object-cover"
+                  />
+                </div>
+                <p>
+                  Berdasarkan Peraturan Presiden Nomor 139 Tahun 2024, Kementerian Hukum dan Hak Asasi Manusia (Kemenkumham) kemudian dibagi menjadi satu kementerian koordinator, dan tiga kementerian, yaitu Kementerian Koordinator Hukum, Hak Asasi Manusia, Imigrasi, dan Pemasyarakatan (Kemenko Kumham Imipas), Kementerian Hukum, Kementerian Hak Asasi Manusia (HAM), 
+                  serta Kementerian Imigrasi dan Pemasyarakatan. Nomenklatur Kementerian Koordinator Bidang Hukum, Hak Asasi Manusia, Imigrasi, dan Pemasyarakatan pertama kali disebutkan dalam pasal 1 angka 2 ketentuan tersebut; kemudian Kemenimipas pada Pasal 1 angka 15 dan Pasal 7; Kementerian Hukum pada Pasal 5; dan Kementerian HAM pada Pasal 6..
+                </p>
+
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Keputusan Bersama Tiga Menteri, 28 Oktober 2024
+                  </strong>
+                </p>
+                <div class="mt-4 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+                  <img
+                    src="https://kemenimipas.go.id/images/2025/05/06/Screenshot_20250506_211654_Samsung_Notes.jpg"
+                    alt="Foto Keputusan 3 Menteri dan 1 Menko"
+                    class="h-[480px] w-full object-cover"
+                  />
+                </div>
+                <p>
+                  Pada tanggal 28 Oktober 2024, untuk menjamin pelaksanaan tugas dan fungsi masingmasing kementerian, Menteri Hukum, Andi Agtas Supratman, Menteri Hak Asasi Manusia, Natalius Pigai, dan Menteri Imigrasi dan Pemasyarakatan, Agus Andrianto menyepakati Keputusan Bersama Nomor MHH-2.PR.01.01 Tahun 2024, Nomor MHA-3.PR.01.01 Tahun 2024, Nomor MIP-4.PR.01.01 
+                  Tahun 2024 tentang Pelaksanaan Tugas dan Fungsi Kementerian Hukum, Kementerian Hak Asasi Manusia, dan Kementerian Imigrasi dan Pemasyarakatan pada Masa Transisi. Kesepakatan tersebut ditandatangani oleh ketiga Menteri dan diketahui oleh Menteri Koordinator Bidang Hukum, Hak Asasi Manusia, Imigrasi, dan Pemasyarakatan (Menko Kumham Imipas), 
+                  Yusril Ihza Mahendra. Kesepakatan utama yang berkaitan dengan transisi yakni sepanjang belum terbentuk struktur organisasi dan tata kerja pada tiap-tiap Kementerian, maka:
+                </p>
+                <ul class="mt-1 list-disc space-y-3 pl-6 text-slate-700">
+                  <li>Sekretariat Jenderal Kementerian Hukum yang sebelumnya disebut dengan Sekretariat Jenderal Kementerian Hukum dan Hak Asasi Manusia memberikan dukungan manajemen berupa perencanaan program dan anggaran; sumber daya manusia; pengelolaan barang milik negara dan pengadaan barang atau jasa; keuangan; umum; dan teknologi informasi kepada Kementerian Koordinator Bidang Hukum, Hak Asasi Manusia, Imigrasi, dan Pemasyarakatan, Kementerian Hak Asasi Manusia, serta Kementerian Imigrasi dan Pemasyarakatan.</li>
+                  <li>Inspektorat Jenderal Kementerian Hukum yang sebelumnya disebut dengan Inspektorat Kementerian Hukum dan Hak Asasi Manusia melakukan pengawasan terhadap penggunaan anggaran dan sumber daya serta memberikan supervisi dalam laporan berkala pembentukan Kementerian baru pada pimpinan Kementerian Hukum, Kementerian Hak Asasi Manusia, dan Kementerian Imigrasi dan Pemasyarakatan.</li>
+                  <li>Alur pertanggungjawaban Direktur Jenderal Imigrasi dan Direktur Jenderal Pemasyarakatan mulai dilaksanakan kepada Menteri Imigrasi dan Pemasyarakatan.</li>
+                </ul>
+
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Penunjukan Empat Eselon I Kemenimipas, 28 Oktober 2024
+                  </strong>
+                </p>
+                <div class="mt-4 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+                  <img
+                    src="https://kemenimipas.go.id/images/2025/05/06/Screenshot_20250506_212823_Samsung_Notes.jpg"
+                    alt="Foto empat eselon I Kemenimipas"
+                    class="h-[480px] w-full object-cover"
+                  />
+                </div>
+                <p>
+                  Pada awal masa transisi, Menteri Imipas menunjuk empat pejabat Eselon I untuk mendukung pelaksanaan tugas dan fungsi Kementerian. Pejabat yang ditunjuk antara lain:
+                </p>
+                <ol class="mt-1 list-decimal space-y-4 pl-6 text-slate-700 leading-8">
+                  <li>Asep Kurnia, menjabat sebagai Staf Ahli Menteri Hukum dan Hak Asasi Manusia Bidang Penguatan Reformasi Birokrasi ditunjuk sebagai Pelaksana Tugas Sekretaris Jenderal Kementerian Imigrasi dan Pemasyarakatan berdasarkan Surat Perintah Menteri Imigrasi dan Pemasyarakatan Nomor MIP-KP.04.01-01;</li>
+                  <li>Ibnu Chuldun, menjabat sebagai Staf Ahli Menteri Hukum dan Hak Asasi Manusia Bidang Politik dan Keamanan ditunjuk sebagai Pelaksana Tugas Inspektur Jenderal Kementerian Imigrasi dan Pemasyarakatan berdasarkan Surat Perintah Menteri Imigrasi dan Pemasyarakatan Nomor MIP-KP.04.01.02;</li>
+                  <li>Saffar Muhammad Godam, sebelumnya menjabat sebagai Direktur Izin Tinggal Keimigrasian ditunjuk sebagai Pelaksana Tugas Direktur Jenderal Imigrasi berdasarkan Surat Perintah Menteri Imigrasi dan Pemasyarakatan Nomor MIP-KP.04.01.03;</li>
+                  <li>Y. Ambeg Paramarta, menjabat sebagai Kepala Badan Strategi Kebijakan Hukum dan Hak Asasi Manusia ditunjuk sebagai Pelaksana Tugas Direktur Jenderal Pemasyarakatan berdasarkan Surat Perintah Menteri Imigrasi dan Pemasyarakatan Nomor MIP-KP.04.01.04;</li>
+                </ol>
+                <p>
+                  Karena kebutuhan organisasi, Ibnu Chuldun ditugaskan sebagai Pelaksana Tugas Sekretaris Kemenko Kumham Imipas, sehingga jabatan Pelaksana Tugas Inspektur Jenderal Kementerian Imigrasi dan Pemasyarakatan dialihkan kepada Sekretaris Inspektorat Jenderal, Ika Yusanti sesuai dengan Surat Perintah Menteri Imigrasi dan Pemasyarakatan Nomor MIP-KP.04.01.05.
+                </p>
+
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Struktur Organisasi Kemenimipas, 19 November 2024
+                  </strong>
+                </p>
+                <div class="mt-6 flex justify-center rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+                  <img
+                    src="https://kemenimipas.go.id/images/2025/05/06/Screenshot_20250506_214438_Samsung_Notes.jpg"
+                    alt="Foto Struktur Organisasi Kemenimipas"
+                    class="w-full max-w-5xl object-contain"
+                  />
+                </div>
+                <p>
+                  Dalam perkembangan masa transisi, Presiden Prabowo Subianto meneken penjelasan mengenai tugas, fungsi, dan susunan organisasi Kemenimipas melalui Peraturan Presiden Nomor 157 Tahun 2024 tentang Kementerian Imigrasi dan Pemasyarakatan tanggal 5 November 2024. Selanjutnya, untuk menindaklanjuti Perpres Nomor 157 Tahun 2024 tersebut, ditetapkan Peraturan Menteri Imigrasi dan Pemasyarakatan Nomor 1 Tahun 2024 tentang Organisasi dan Tata Kerja Kementerian Imigrasi dan Pemasyarakatan pada tanggal 19 November 2024. 
+                  Berdasarkan Pasal 7 Permen tersebut, Kementerian Imigrasi dan Pemasyarakatan terdiri atas: 
+                </p>
+                <ul class="mt-1 list-disc space-y-3 pl-6 text-slate-700">
+                  <li>Sekretariat Jenderal;</li>
+                  <li>Inspektorat Jenderal;</li>
+                  <li>Direktorat Jenderal Imigrasi;</li>
+                  <li>Direktorat Jenderal Pemasyarakatan;</li>
+                  <li>Badan Pengembangan Sumber Daya Manusia Imigrasi dan Pemasyarakatan;</li>
+                  <li>Staf Ahli Bidang Hubungan Antar Lembaga;</li>
+                  <li>Staf Ahli Bidang Pelayanan Publik dan Reformasi Hukum;</li>
+                  <li>Staf Ahli Bidang Penguatan Reformasi Birokrasi;</li>
+                  <li>Pusat Strategi Kebijakan;</li>
+                  <li>Pusat Data, Informasi, dan Komunikasi Publik. </li>
+                </ul>
+
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Melantik 33 Pimpti Pratama, 28 November 2024
+                  </strong>
+                </p>
+                <div class="mt-4 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+                  <img
+                    src="https://kemenimipas.go.id/images/2025/05/06/Screenshot_20250506_215649_Samsung_Notes.jpg"
+                    alt="Foto Melantik 33 Pimpti Pratama"
+                    class="h-[480px] w-full object-cover"
+                  />
+                </div>
+                <p>
+                  Setelah memiliki acuan struktur organisasi dan tata kerja di lingkungan Kemenimipas, Menteri Imipas menetapkan dan melantik 33 Pimpinan Tinggi Pratama di lingkungan Kemenimipas berdasarkan Keputusan Menteri Imipas Nomor M.IP-17.KP.03.03 TAHUN 2024 tentang Pemberhentian dan Pengangkatan dari dan Dalam Jabatan Pimpinan Tinggi Pratama di Lingkungan Kementerian Imigrasi dan Pemasyarakatan tanggal 28 November 2024 di Aula Adiwinata, Lantai 12, Gedung Kemenimipas, Jakarta. Pimpinan Tinggi Pratama yang dilantik antara lain:
+                </p>
+                <ol class="mt-6 list-decimal pl-6 space-y-2 text-slate-700 leading-7 text-[15px]">
+                  <li>Marcelina Budiningsih, Bc.IP., S.Sos., M.Si. sebagai Kepala Pusat Data Informasi dan Komunikasi Publik;</li>
+                  <li>Jamaruli Manihuruk, S.H., M.H. sebagai Kepala Pusat Strategi Kebijakan;</li>
+                  <li>Ibnu Ismoyo, S.H., M.H., M.M. sebagai Kepala Biro Perencanaan dan Keuangan;</li>
+                  <li>Dodot Adiwinarto, Bc.IP., S.H., M.H. sebagai Kepala Biro Sumber Daya Manusia, Organisasi, dan Ketatalaksanaan;</li>
+                  <li>Jayanta Surbakti, S.IP., M.Si. sebagai Kepala Biro Barang Milik Negara;</li>
+                  <li>Eko Budianto, S.H., M.Si. sebagai Kepala Biro Hukum dan Kerja Sama;</li>
+                  <li>Agung Aribawa, A.Md.IP., S.H., M.Si. sebagai Kepala Biro Umum;</li>
+                  <li>Ilka Yusanti, Bc.IP., S.H., M.Si. sebagai Sekretaris Inspektorat Jenderal;</li>
+                  <li>Dr. Iwan Santoso, S.H., M.Si. sebagai Inspektur Wilayah I Inspektorat Jenderal;</li>
+                  <li>M. Adnan, S.H., M.H. sebagai Inspektur Wilayah II Inspektorat Jenderal;</li>
+                  <li>Pria Wibawa, S.H. sebagai Inspektur Wilayah III Inspektorat Jenderal;</li>
+                  <li>Supriyanto, Bc.IP., S.Pd. sebagai Inspektur Wilayah IV Inspektorat Jenderal;</li>
+                  <li>Sandi Andaryadi, A.Md.Im., S.IP., M.Si. sebagai Sekretaris Direktorat Jenderal Imigrasi;</li>
+                  <li>Tato Juliadin Hidayawan, S.H., M.M. sebagai Direktur Visa dan Dokumen Perjalanan, Direktorat Jenderal Imigrasi;</li>
+                  <li>Jaya Saputra, S.H., M.Si. sebagai Direktur Izin Tinggal dan Status Keimigrasian, Direktorat Jenderal Imigrasi;</li>
+                  <li>Brigjen Pol. Anom Wibowo sebagai Direktur Intelijen Keimigrasian, Direktorat Jenderal Imigrasi;</li>
+                  <li>Kombes Pol. Yuldi Yusman sebagai Direktur Pengawasan dan Penindakan Keimigrasian, Direktorat Jenderal Imigrasi;</li>
+                  <li>Felucia Sengky Ratna, A.Md.Im., S.H., M.Si. sebagai Direktur Kerja Sama Keimigrasian dan Bina Perwakilan, Direktorat Jenderal Imigrasi;</li>
+                  <li>Barron Ichsan, A.Md.Im., S.H., M.Si. sebagai Direktur Kepatuhan Internal, Direktorat Jenderal Imigrasi;</li>
+                  <li>Suhendra, S.E., M.M. sebagai Direktur Tempat Pemeriksaan Imigrasi, Direktorat Jenderal Imigrasi;</li>
+                  <li>Chicco Ahmad Muttaqin, A.Md.Im., S.Sos., M.A. sebagai Direktur Teknologi Informasi Keimigrasian, Direktorat Jenderal Imigrasi;</li>
+                  <li>Dr. Gun Gun Gunawan sebagai Sekretaris Direktorat Jenderal Pemasyarakatan;</li>
+                  <li>Kadek Anton Budiharta, A.Md.IP., S.H., M.Si. sebagai Direktur Sistem dan Strategi Penyelenggaraan Pemasyarakatan, Direktorat Jenderal Pemasyarakatan;</li>
+                  <li>Masjuno, A.Md.IP., S.H., M.H. sebagai Direktur Pelayanan Tahanan dan Anak, Direktorat Jenderal Pemasyarakatan;</li>
+                  <li>Erwedi Supriyatno, Bc.IP., S.H., M.H. sebagai Direktur Pembinaan Narapidana dan Anak Binaan, Direktorat Jenderal Pemasyarakatan;</li>
+                  <li>Dr. dr. Adhayani Lubis, Sp.KJ., M.K.M. sebagai Direktur Perawatan Kesehatan dan Rehabilitasi, Direktorat Jenderal Pemasyarakatan;</li>
+                  <li>Ceno Hersuetiohartiko, Bc.IP., S.H., M.H. sebagai Direktur Pembimbingan Kemasyarakatan, Direktorat Jenderal Pemasyarakatan;</li>
+                  <li>Kombes Pol. Tatan Dirsan Atmaja sebagai Direktur Pengamanan dan Intelijen, Direktorat Jenderal Pemasyarakatan;</li>
+                  <li>Maulidi Hilal, S.H., M.Si. sebagai Direktur Teknologi Informasi dan Kerja Sama Pemasyarakatan, Direktorat Jenderal Pemasyarakatan;</li>
+                  <li>Lilik Sujandi, Bc.IP., S.IP., M.Si. sebagai Direktur Kepatuhan Internal, Direktorat Jenderal Pemasyarakatan;</li>
+                  <li>Dadan Gunawan, S.H., M.Si. sebagai Sekretaris Badan Pengembangan Sumber Daya Manusia Imigrasi dan Pemasyarakatan;</li>
+                  <li>Pujo Harinto, Bc.IP., S.Sos., M.Si. sebagai Kepala Pusat Pengembangan dan Penilaian Kompetensi, Badan Pengembangan Sumber Daya Manusia Imigrasi dan Pemasyarakatan; dan</li>
+                  <li>Dr. Muhammad Tito Andrianto, S.H., M.H. sebagai Kepala Pusat Pelatihan, Badan Pengembangan Sumber Daya Manusia Imigrasi dan Pemasyarakatan.</li>
+                </ol>
+
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Penataan Organisasi dan Tata Kerja Tingkat Wilayah, 20 Desember 2024
+                  </strong>
+                </p>
+                <p>
+                  Selain mengatur penataan organisasi dan tata kerja di tingkat pusat, Menteri Imipas juga menetapkan ketentuan di tingkat wilayah melalui Peraturan Menteri Imigrasi dan 
+                  Pemasyarakatan Nomor 2 tahun 2024 tentang Organisasi dan Tata Kerja Kantor Wilayah Direktorat Jenderal Imigrasi tanggal 20 Desember 2024 dan Peraturan Menteri Imigrasi dan Pemasyarakatan Nomor 4 tahun 2024 tentang Organisasi dan Tata Kerja Kantor Wilayah Direktorat Jenderal Pemasyarakatan tanggal 20 Desember 2024. Berdasarkan ketentuan tersebut, Kantor Wilayah (Kanwil) Direktorat Jenderal Imigrasi dan Kanwil Direktorat Jenderal Pemasyarakatan berjumlah masing-masing 33 kantor dengan rincian:
+                </p>
+                <ul class="mt-1 list-disc space-y-3 pl-6 text-slate-700">
+                  <li>Direktorat Jenderal Imigrasi Tipe A berjumlah 10 dan Tipe B berjumlah 23 kanwil; dan</li>
+                  <li>Direktorat Jenderal Pemasyarakatan Tipe A berjumlah 14 Tipe B berjumlah 19 kanwil.</li>
+                </ul>
+
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Melantik Pimpinan Tinggi Madya, 09 Januari 2025
+                  </strong>
+                </p>
+                <div class="mt-4 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+                  <img
+                    src="https://kemenimipas.go.id/images/2025/05/06/Screenshot_20250506_222831_Samsung_Notes.jpg"
+                    alt="Foto Melantik pimpinan tinggi madya"
+                    class="h-[480px] w-full object-cover"
+                  />
+                </div>
+                <p>
+                  Selanjutnya, berdasarkan Keputusan Presiden Nomor 197/TPA Tahun 2024 tentang Pemberhentian dan Pengangkatan dari dan dalam Jabatan Pimpinan Tinggi Madya pada tanggal 9 Januari 2025, Menteri Imipas melantik Pimpinan Tinggi Madya Kemenimipas yang terdiri dari:
+                </p>
+                <ol class="mt-6 list-decimal pl-6 space-y-2 text-slate-700 leading-7 text-[15px]">
+                  <li>Asep Kurnia, S.H., M.M., sebagai Sekretaris Jenderal;</li>
+                  <li>Brigjen Pol. Drs. Mashudi, sebagai Direktur Jenderal Pemasyarakatan;</li>
+                  <li>Irjen Pol. Drs. Yan Sultra Indrajaya, S.H., sebagai Inspektur Jenderal;</li>
+                  <li>Aman Riyadi, S.IP., M.Si., sebagai Kepala Badan Pengembangan Sumber Daya Manusia Imigrasi dan Pemasyarakatan;</li>
+                  <li>Anggiat Napitupulu, S.S., M.Si., sebagai Staf Ahli Bidang Hubungan Antar Lembaga;</li>
+                  <li>Brigjen Pol. Drs. Ratna Pristiana Mulya, S.H., M.H., sebagai Staf Ahli Bidang Pelayanan Publik dan Reformasi Hukum; dan</li>
+                  <li>Dr. Ida Asep Somara, Bc.IP., S.Sos., M.M., sebagai Staf Ahli Bidang Penguatan Reformasi Birokrasi.</li>
+                </ol>
+
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Peluncuran Logo Kementerian Imigrasi dan Pemasyarakatan, 09 Januari 2025
+                  </strong>
+                </p>
+                <div class="mt-4 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+                  <img
+                    src="https://kemenimipas.go.id/images/2025/05/06/Screenshot_20250506_223758_Samsung_Notes.jpg"
+                    alt="Foto peluncuran logo kemenimipas"
+                    class="h-[480px] w-full object-cover"
+                  />
+                </div>
+                <p>
+                  Pada tanggal 13 Desember 2024, Menteri Imipas menetapkan lambang dan cap dinas melalui Keputusan Menteri Imigrasi dan Pemasyarakatan Republik Indonesia Nomor M.IP-17.UM.01.01 Tahun 2024 tentang Lambang dan Cap Dinas Kementerian Imigrasi dan Pemasyarakatan yang kemudian diluncurkan pada tanggal 9 Januari 2025. Lambang resmi Kemenimipas berbentuk:
+                </p>
+                <ul class="mt-1 list-disc space-y-3 pl-6 text-slate-700">
+                  <li>Lingkaran berwarna biru dengan Garuda Pancasila yang berada di tengah (sentral) lingkaran.</li>
+                  <li>Terdapat dua Tangkai Padi yang membentuk lingkaran di sekeliling Garuda Pancasila tersebut.</li>
+                  <li>Selain itu, terdapat simbol Bintang yang terletak di atas Garuda Pancasila dan di ujung dua Tangkai Padi.</li>
+                  <li>Logo tersebut dikelilingi oleh Tali Tambang berwarna emas dengan tulisan “Kementerian Imigrasi dan Pemasyarakatan Republik Indonesia” di sisi paling luar.</li>
+                </ul>
+
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Pelantikan 33 Kakanwil dan 11 Pejabat Setara Eselon II di Lingkungan Dirjenim, 14 Januari 2025
+                  </strong>
+                </p>
+                <p>
+                  Setelah melantik Pimpinan Tinggi Madya dan meluncurkan lambang Kemenimipas, pada tanggal 14 Januari 2025 Menteri Imipas melantik 33 Kepala Kanwil dan 11 pejabat setara Eselon II di lingkungan Direktorat Jenderal Imigrasi Keputusan Menteri Imigrasi dan Pemasyarakatan Republik Indonesia Nomor M.IP-26.SA.03.03 tentang Pemberhentian dan 
+                  Pengangkatan dari dan dalam Jabatan Pimpinan Tinggi Pratama di Lingkungan Kementerian Imigrasi dan Pemasyarakatan tanggal 10 Januari 2025. 33 Kepala Kanwil dilantik di lingkungan Ditjen Imigrasi terdiri dari:
+                </p>
+                <ol class="mt-6 list-decimal pl-6 space-y-2 text-slate-700 leading-7 text-[15px]">
+                  <li>Novianto Sulastono, S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Aceh;</li>
+                  <li>Teodorum Simarmata, S.H., M.Hum., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Sumatera Utara;</li>
+                  <li>Ujo Sujioto, S.H., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Kepulauan Riau;</li>
+                  <li>Arief Munandar, S.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Daerah Khusus Jakarta;</li>
+                  <li>Is Edy Ekoputranto, S.H., M.M., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Jawa Tengah;</li>
+                  <li>Hendro Tri Prasetyo, S.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Banten;</li>
+                  <li>Filianto Akbar, S.E., M.M., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Jawa Barat;</li>
+                  <li>Pramuji Raharja., S.H., M.M., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Jawa Timur;</li>
+                  <li>Parlindungan, S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Bali;</li>
+                  <li>Firece Sumolang, S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Sulawesi Selatan;</li>
+                  <li>Nurudin, S.Sos., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Sumatera Barat;</li>
+                  <li>Agung Prianto, S.H., M.M., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Riau;</li>
+                  <li>Wahyu Hidayat, A.Md.Im., S.H., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Jambi;</li>
+                  <li>Sigit Setyawan, A.Md.Im., S.Sos., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Sumatera Selatan;</li>
+                  <li>Qriz Pratama, A.Md.Im., S.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Kepulauan Bangka Belitung;</li>
+                  <li>Victor Manurung, S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Bengkulu;</li>
+                  <li>Petrus Teguh, A.Md.Im., S.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Lampung;</li>
+                  <li>Junita Sitorus, S.IP., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Daerah Istimewa Yogyakarta;</li>
+                  <li>Haryono Agus Setyawan, S.S., M.A., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Kalimantan Barat;</li>
+                  <li>Mas Arie Yuliansa Dwi Putra, A.Md.Im., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Kalimantan Tengah;</li>
+                  <li>Syahrionna Delavino, S.Sos., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Kalimantan Timur;</li>
+                  <li>Yan Wely Wiguna, S.Sos., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Kalimantan Selatan;</li>
+                  <li>Dr. Yopie Asmara, S.E., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Nusa Tenggara Barat;</li>
+                  <li>Arvin Gumilang, S.E., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Nusa Tenggara Timur;</li>
+                  <li>Arief Hazairin Satoto, A.Md.Im., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Sulawesi Tengah;</li>
+                  <li>Ramdhani, A.Md.Im., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Sulawesi Utara;</li>
+                  <li>Subki Miuldi, S.Kom., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Gorontalo;</li>
+                  <li>Ganda Samosir, S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Sulawesi Tenggara;</li>
+                  <li>Said Noviansyah, A.Md.Im., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Sulawesi Barat;</li>
+                  <li>Doni Alfiysahrin, S.E., M.A.P., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Maluku;</li>
+                  <li>Ian Fidihanto Markos, S.H., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Maluku Utara;</li>
+                  <li>Samuel Toba, S.Sos., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Papua; dan</li>
+                  <li>Asrul, S.Sos., M.A., sebagai Kepala Kantor Direktorat Wilayah Jenderal Imigrasi Papua Barat.</li>
+                </ol>
+
+                <p>
+                  <strong class="font-bold text-slate-900 text-[24px]">
+                    Pelantikan 33 Kakanwil dan 6 Pejabat Setara Eselon II di Lingkungan Dirjenpas, 14 Januari 2025
+                  </strong>
+                </p>
+                <p>
+                  Secara bersamaan, Menteri Imipas juga melantik 33 Kepala Kanwil dan 6 pejabat setara Eselon II di lingkungan Direktorat Jenderal Pemasyarakatan berdasarkan Keputusan Menteri Imigrasi dan Pemasyarakatan Republik Indonesia Nomor M.IP-27.SA.03.03 tentang Pemberhentian dan Pengangkatan dari dan 
+                  dalam Jabatan Pimpinan Tinggi Pratama di Lingkungan Kementerian Imigrasi dan Pemasyarakatan tanggal 10 Januari 2025. 33 Kepala Kanwil dilantik di lingkungan Ditjen Imigrasi terdiri dari:
+                </p>
+                <ol class="mt-6 list-decimal pl-6 space-y-3 text-slate-700 leading-7 text-[15px]">
+                  <li>Yan Rusmanto, Bc.IP., S.Sos., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Aceh;</li>
+                  <li>Yudi Suseno, Bc.IP., S.Sos., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Sumatera Utara;</li>
+                  <li>Marselina Budiningsih, Bc.IP., S.Sos., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Sumatera Barat, sehingga jabatan Kepala Pusat Data, Informasi dan Komunikasi Publik digantikan oleh Mochamad Akbar Hadi Prabowo, Bc.IP., S.Sos., M.H., yang diangkat dalam waktu bersamaan;</li>
+                  <li>Akizar, Bc.IP., S.Sos., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Riau;</li>
+                  <li>Jalu Yuswa Panjang, A.Md.IP., S.H., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Lampung;</li>
+                  <li>Heri Azhari, Bc.IP., S.Sos., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Daerah Khusus Jakarta;</li>
+                  <li>Kusnali, A.Md.IP., S.Sos., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Jawa Barat;</li>
+                  <li>Kunrat Kasmin, A.Md.IP., S.Sos., M.AP., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Jawa Tengah;</li>
+                  <li>Kadiyono, Bc.IP., S.IP., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Jawa Timur;</li>
+                  <li>Hernowo Sugiasanto, S.Sos., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Kalimantan Timur;</li>
+                  <li>Mulyadi, Bc.IP., S.H., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Kalimantan Selatan;</li>
+                  <li>Erwedi Supriyatno, Bc.IP., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Sumatera Selatan;</li>
+                  <li>Rudy Fernando Sianturi, A.Md.IP., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Sulawesi Selatan;</li>
+                  <li>Anak Agung Gde Krisna, A.Md.IP., S.H., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Nusa Tenggara Barat;</li>
+                  <li>Aris Munandar, Bc.IP., S.Sos., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Kepulauan Riau;</li>
+                  <li>Hidayat, A.Md.IP., S.H., M.M., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Jambi;</li>
+                  <li>Herman Sawiran, Bc.IP., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Kepulauan Bangka Belitung;</li>
+                  <li>Haposan Silalahi, A.Md.IP., S.Sos., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Daerah Istimewa Yogyakarta;</li>
+                  <li>Muhammad Ali Syef Banna, Bc.IP., S.Sos., M.Si., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Banten;</li>
+                  <li>Lili, S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Daerah Istimewa Yogyakarta;</li>
+                  <li>Teguh Wibowo, Bc.IP., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Kalimantan Barat;</li>
+                  <li>I Putu Mardiana, A.Md.IP., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Kalimantan Tengah;</li>
+                  <li>Decky Nurmansyah, A.Md.IP., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Bali;</li>
+                  <li>Maliki, S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Nusa Tenggara Timur;</li>
+                  <li>Bagus Kurniawan, A.Md.IP., S.Sos., M.A., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Sulawesi Tengah;</li>
+                  <li>Tonny Nanggolan, Bc.IP., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Sulawesi Utara;</li>
+                  <li>Bambang Haryanto, Bc.IP., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Gorontalo;</li>
+                  <li>Sulardi, Bc.IP., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Sulawesi Tenggara;</li>
+                  <li>Ricky Dwi Biantoro, A.Md.IP., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Maluku;</li>
+                  <li>Drs. S. Mahdar, S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Maluku Utara;</li>
+                  <li>Teguh Pamuji, A.Md.IP., S.Sos., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Papua;</li>
+                  <li>Hensah, A.Md.IP., S.H., M.H., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Papua Barat;</li>
+                  <li>Usman M. A.Md.IP., S.H., M.M., sebagai Kepala Kantor Direktorat Wilayah Jenderal Pemasyarakatan Sulawesi Barat.</li>
+                </ol>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="bg-[#072B45] text-white">
+      <div class="mx-auto max-w-7xl px-6 py-16">  
+        <div class="grid gap-12 md:grid-cols-3">
+          <!-- ================= LEFT ================= -->
+          <div>
+            <div class="flex items-center gap-4">
+              <img src="https://kemenimipas.go.id/images/logo/Kementerian-Hukum-Dan-Ham-Kemenkumham-Logo-Vector.png" class="h-14 w-auto object-contain" alt="Logo 1">
+              <img src="LOGO PAS 2025 FIX.png" class="h-14 w-auto object-contain" alt="Logo 2">
+              <div class="leading-tight">
+                <div class="text-xs font-semibold text-white/80">KEMENIMIPAS RI</div>
+                <div class="text-xs text-white/70">KANTOR WILAYAH</div>
+                <div class="text-xs text-white/70">DITJEN PEMASYARAKATAN JAWA TENGAH</div>
+              </div>
+            </div>
+            <h3 class="mt-10 text-2xl font-semibold">
+              Kantor Wilayah Jawa Tengah
+            </h3>
+            <p class="mt-5 text-sm leading-relaxed text-white/80">
+              Jl. Tugu Asri, Tambakaji,<br>
+              Kec. Ngaliyan,<br>
+              Kota Semarang, Jawa Tengah 50185
+            </p>
+            <p class="mt-6 text-sm text-white/80">
+              Senin – Jumat<br>
+              07.30 – 16.00
+            </p>
+            <!-- Social Media -->
+            <div class="mt-8 flex items-center gap-3">
+              <a href="https://facebook.com/Kanwil Pemasyarakatan Jateng"
+                target="_blank" rel="noopener noreferrer"
+                class="opacity-90 hover:opacity-100"
+                aria-label="Facebook">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4H15c-1.2 0-1.6.7-1.6 1.5V12H18l-.7 2.9h-3v7A10 10 0 0 0 22 12z"/>
+                </svg>
+              </a>
+
+              <!-- X -->
+              <a href="https://x.com/pemasyarakatanjateng"
+                target="_blank" rel="noopener noreferrer"
+                class="opacity-90 hover:opacity-100"
+                aria-label="X">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.5l-5.1-6.6L6 22H2.8l7.3-8.4L1 2h6.7l4.6 6.1L18.9 2zm-1.1 18h1.7L7.6 3.9H5.8L17.8 20z"/>
+                </svg>
+              </a>
+
+              <!-- YouTube -->
+              <a href="https://www.youtube.com/@pemasyarakatanjateng"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group transition"
+                aria-label="YouTube">
+                <svg class="h-6 w-6 text-white transition group-hover:text-red-600"
+                    viewBox="0 0 24 24"
+                    fill="currentColor">
+                  <path d="M23.498 6.186a2.99 2.99 0 0 0-2.105-2.115C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.393.571A2.99 2.99 0 0 0 .502 6.186 31.36 31.36 0 0 0 0 12a31.36 31.36 0 0 0 .502 5.814 2.99 2.99 0 0 0 2.105 2.115C4.495 20.5 12 20.5 12 20.5s7.505 0 9.393-.571a2.99 2.99 0 0 0 2.105-2.115A31.36 31.36 0 0 0 24 12a31.36 31.36 0 0 0-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z"/>
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://instagram.com/pemasyarakatanjateng"
+                target="_blank" rel="noopener noreferrer"
+                class="opacity-90 hover:opacity-100"
+                aria-label="Instagram">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 2A1.8 1.8 0 1 0 13.8 12 1.8 1.8 0 0 0 12 10.2zM17.6 6.7a.9.9 0 1 1-.9.9.9.9 0 0 1 .9-.9z"/>
+                </svg>
+              </a>
+
+              <!-- TikTok -->
+              <a href="https://www.tiktok.com/@ditjenpasjateng"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="opacity-90 hover:opacity-100"
+                aria-label="TikTok">
+                
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-1.88V15.3a5.32 5.32 0 1 1-4.59-5.27v2.82a2.5 2.5 0 1 0 1.77 2.39V2h2.82a4.79 4.79 0 0 0 3.77 3.68v1.006z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- ================= CENTER ================= -->
+          <div>
+            <h4 class="text-2xl font-semibold">Link Terkait</h4>
+            <ul class="mt-8 space-y-4 text-white/85">
+              <li><a href="#" class="hover:text-yellow-400 transition">Profil</a></li>
+              <li><a href="#" class="hover:text-yellow-400 transition">Layanan</a></li>
+              <li><a href="#" class="hover:text-yellow-400 transition">Berita</a></li>
+              <li><a href="#" class="hover:text-yellow-400 transition">Kontak</a></li>
+            </ul>
+          </div>
+          <!-- ================= RIGHT ================= -->
+          <div>
+            <h4 class="text-2xl font-semibold">
+              Kontak Pelayanan & Pengaduan
+            </h4>
+            <div class="mt-8 space-y-6">
+              <!-- Phone -->
+              <div class="flex items-center gap-4">
+                <div class="grid h-12 w-12 place-items-center rounded-xl bg-yellow-400 text-slate-900">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011-.24c1.12.37 2.33.57 3.59.57a1 1 0 011 1V20a1 1 0 01-1 1C9.61 21 3 14.39 3 6a1 1 0 011-1h3.49a1 1 0 011 1c0 1.26.2 2.47.57 3.59a1 1 0 01-.24 1l-2.2 2.2z"/>
+                  </svg>
+                </div>
+
+                <div>
+                  <div class="text-sm text-white/70">Telepon</div>
+                  <div class="text-lg font-semibold">+62 823-2422-8900</div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="flex items-center gap-4">
+                <div class="grid h-12 w-12 place-items-center rounded-xl bg-yellow-400 text-slate-900">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5A2.25 2.25 0 012.25 17.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5H4.5A2.25 2.25 0 002.25 6.75m19.5 0l-9.75 6-9.75-6" />
+                  </svg>
+                </div>
+
+                <div>
+                  <div class="text-sm text-white/70">Email</div>
+                  <div class="text-lg font-semibold break-all">kambina.pasjateng@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Divider -->
+        <div class="mt-14 border-t border-white/15 pt-6 text-center text-sm text-white/60">
+          Kanwil Ditjenpas Jawa Tengah © <span id="year"></span> All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile nav
+      const mobileBtn = document.getElementById("mobileBtn");
+      const mobileNav = document.getElementById("mobileNav");
+      mobileBtn?.addEventListener("click", () => mobileNav.classList.toggle("hidden"));
+    </script>
+  </body>
+</html>
